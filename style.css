@@ -1,4 +1,23 @@
-/* Untuk menempatkan menu di bagian bawah halaman */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: space-around; /* Memposisikan item dengan jarak yang merata */
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Warna background */
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* Efek bayangan */
+}
+
+/* Sidebar Styling */
 .footer-menu {
     display: flex;
     justify-content: space-around; /* Memposisikan item dengan jarak yang merata */
@@ -9,17 +28,41 @@
     background-color: #333; /* Warna background */
     padding: 10px 0;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* Efek bayangan */
-  }
   
-  .menu-item {
+}
+
+/* Content Styling */
+.content {
+    flex: 1;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.menu-item {
     color: white; /* Warna teks */
     text-decoration: none;
     font-size: 16px;
     padding: 8px 16px;
     transition: color 0.3s;
-  }
-  
-  .menu-item:hover {
+}
+
+.menu-item:hover {
     color: #ff6347; /* Warna ketika menu di-hover */
   }
-  
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

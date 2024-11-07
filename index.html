@@ -9,12 +9,53 @@
 <body>
     <!-- Sidebar Navigasi -->
     <div class="footer-menu">
-        <a href="#home" class="menu-item">Home</a>
-        <a href="#info" class="menu-item">Info</a>
-        <a href="#maps" class="menu-item">Maps</a>
-        <a href="#galeri" class="menu-item">Galeri</a>
-        <a href="#ucapan" class="menu-item">Ucapan</a>
-      </div>
-      
+        <h2>Undangan</h2>
+        <ul>
+            <a href="#home" class="menu-item">Home</a>
+            <a href="#info" class="menu-item">Info</a>
+            <a href="#maps" class="menu-item">Maps</a>
+            <a href="#galeri" class="menu-item">Galeri</a>
+            <a href="#ucapan" class="menu-item">Ucapan</a>
+        </ul>
+    </div>
+    
+    <!-- Konten Halaman -->
+    <div class="content">
+        <!-- Home -->
+        <div id="home" class="page active">
+            <h1>Selamat Datang di Undangan Pernikahan</h1>
+            <p>Wahyu & Riski</p>
+            <p>Rabu, 15 Maret 2023</p>
+            <button onclick="saveTheDate()">Save the Date</button>
+        </div>
+        
+        <!-- Halaman Mempelai -->
+        <div id="mempelai" class="page">
+            <h2>Mempelai</h2>
+            <p>Informasi tentang mempelai.</p>
+        </div>
+
+        <!-- Halaman Tanggal -->
+        <div id="tanggal" class="page">
+            <h2>Tanggal dan Lokasi</h2>
+            <p>Detail tanggal dan lokasi acara pernikahan.</p>
+        </div>
+        
+        <!-- Halaman Galeri -->
+        <div id="galeri" class="page">
+            <h2>Galeri Foto</h2>
+            <p>Koleksi foto momen spesial kami.</p>
+        </div>
+
+        <!-- Halaman Ucapan -->
+        <div id="ucapan" class="page">
+            <h2>Ucapan</h2>
+            <textarea placeholder="Tulis ucapan..."></textarea>
+            <button>Kirim</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
