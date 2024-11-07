@@ -7,14 +7,14 @@
 
 body {
     display: flex;
-    justify-content: space-around; /* Memposisikan item dengan jarak yang merata */
+    justify-content: flex-start; /* Berbaris ke kiri */
     align-items: center;
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #333; /* Warna background */
+    background-color: #00b3ff;
     padding: 10px 0;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* Efek bayangan */
+    box-shadow: 0 -2px 5px rgba(255, 1, 225, 0.2);
 }
 
 /* Sidebar Styling */
@@ -25,10 +25,11 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #e0dfdf;
     padding: 10px 0;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 -2px 5px rgba(241, 9, 9, 0.2);
     text-align: center;            /* Menambahkan text-align center untuk memastikan teks berada di tengah */
+    padding-left: 20px;
 }
 
 /* Content Styling */
@@ -52,14 +53,11 @@ content {
     font-size: 16px;
     padding: 8px 16px;
     transition: color 0.3s;
-    display: flex;                 /* Menambahkan flex pada menu-item */
-    align-items: center;           /* Memastikan teks di tengah secara vertikal */
-    justify-content: center;       /* Memastikan teks di tengah secara horizontal */
   
 }
 
 .menu-item:hover {
-    color: #ff6347; /* Warna ketika menu di-hover */
+    color: #ff6347;
   }
 
 textarea {
