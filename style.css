@@ -20,15 +20,15 @@ body {
 /* Sidebar Styling */
 .footer-menu {
     display: flex;
-    justify-content: space-around; /* Memposisikan item dengan jarak yang merata */
-    align-items: center;
+    justify-content: space-around; /* Menempatkan item secara merata */
+    align-items: center;           /* Memastikan item sejajar di tengah secara vertikal */
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #333; /* Warna background */
+    background-color: #333;
     padding: 10px 0;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* Efek bayangan */
-  
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    text-align: center;            /* Menambahkan text-align center untuk memastikan teks berada di tengah */
 }
 
 /* Content Styling */
@@ -47,11 +47,15 @@ body {
 }
 
 .menu-item {
-    color: white; /* Warna teks */
+    color: white;
     text-decoration: none;
     font-size: 16px;
     padding: 8px 16px;
     transition: color 0.3s;
+    display: flex;                 /* Menambahkan flex pada menu-item */
+    align-items: center;           /* Memastikan teks di tengah secara vertikal */
+    justify-content: center;       /* Memastikan teks di tengah secara horizontal */
+  
 }
 
 .menu-item:hover {
